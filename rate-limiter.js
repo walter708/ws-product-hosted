@@ -1,5 +1,5 @@
 const Redis = require('ioredis')
-const REDIS_PORT = process.env.PORT || 6379
+const REDIS_PORT = process.env.REDISPORT || 6379
 const redisClient  = new Redis(REDIS_PORT)
 
 const rateLimiter =  ({secondsWindow, allowedHits }) =>{
