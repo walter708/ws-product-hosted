@@ -3,6 +3,10 @@
   "version": "0.2.0",
   "description": "API work samples",
   "main": "index.js",
+  "engines": {
+    "node": "16.15.1"
+  },
+
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
