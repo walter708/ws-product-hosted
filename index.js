@@ -41,7 +41,7 @@ const app = express()
 // Middleware 
 app.options("*", cors({ origin: '*' }));
 app.use(cors({ origin: '*'}));
-app.use('/', express.static('build'));
+app.use('/', express.static('public'));
 app.use(bodyParser.json());
 app.use(compression())
 app.use(helmet());
